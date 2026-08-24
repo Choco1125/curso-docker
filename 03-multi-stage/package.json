@@ -1,0 +1,19 @@
+{
+  "name": "03-multi-stage",
+  "version": "1.0.0",
+  "description": "Example of multi-stage: is build using esbuild and signed image is uploaded to docker image",
+  "scripts": {
+    "build": "esbuild src/server.js --bundle --platform=node --format=esm --outfile=dist/server.js",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "canvas-confetti": "1.9.4"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
